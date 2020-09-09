@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>Manmentum</title>
+</head>
+<body>
+    <div class="contentStyle">        
+        <div class="js-clock clock">
+            <h1 class="js-title"></h1>
+            <h4 class="js-date"></h4>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What's your Name?"/>
+        </form>
+        <div class="greetingsContainer">
+            <i class="fas fa-eraser"></i>
+            <h4 class="js-greetings greetings"></h4>
+        </div>
+        <form class="js-toDoForm toDoForm">
+            <input type="text" placeholder="Write What To Do " />
+        </form>
+    </div>
+    <div class="toDoContainer">
+        <ul class="js-toDoList toDoList">To Do List!</ul>
+        <ul class="js-finishedToDoList finishedToDoList">Finished!</ul>
+    </div>
+    <div class="js-howWeather howWeather">
+        <span class="js-weatherDetails"></span>
+    </div>        
+    <script src="clock.js"></script>
+    <script src='greeting.js'></script>
+    <script src='todo.js'></script>
+    <script src='bg.js'></script>
+    <script src='weather.js'></script>
+</body>
+</html>
+

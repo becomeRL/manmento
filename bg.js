@@ -1,0 +1,27 @@
+const body = document.querySelector('body'),
+    IMG_NUMBER = 9;
+    
+function paintImage(imgNumber){
+    const image = new Image();
+    image.src = `images/${imgNumber + 1}.jpg`;
+    image.classList.add('bgImage');
+    body.appendChild(image);
+        
+}
+    
+function genRandom(){
+    const number = Math.floor(Math.random() * IMG_NUMBER);
+    return number;
+}
+    
+function imgChange(){
+    const randomNumber = genRandom();
+    paintImage(randomNumber);
+    setTimeout(imgChange,30000);
+}
+
+function init(){
+   imgChange();
+}
+
+init();

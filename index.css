@@ -1,0 +1,85 @@
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: o;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top : 0;
+    left : 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+.contentStyle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: 'Pacifico', 'Jua', cursive;
+    font-size: 2rem;
+    margin: 0 0;
+}
+
+.fa-eraser{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+.fa-eraser:hover{
+    color: skyblue;
+}
+
+.toDoList,
+.finishedToDoList{
+    border-style: none;
+    margin: 30px 30px;
+    display: inline-block;
+    font-family: 'Pacifico', 'Jua', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.toDoContainer{
+    text-align: center;
+}
+
+.howWeather{
+    position: absolute;
+    right: 20px;
+    bottom: 850px;
+    font-family: 'Pacifico', 'Jua', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button{
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+button:hover{
+    color: skyblue;
+    
+}
